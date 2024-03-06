@@ -39,11 +39,6 @@
     justify-content: space-between;
 }
 
-.skill-container {
-    display: flex;
-    justify-content: space-between;
-}
-
 /* container-2 */
 
 .container2 {
@@ -62,8 +57,8 @@
 .img-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
+    /* flex-direction: column;
+    align-content: center; */
     justify-content: center;
 }
 

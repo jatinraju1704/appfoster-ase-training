@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Patient Form</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: center;">
+        <form method="post" action="">
+            <h3 style="text-align: center;">Patient Registration Form</h3>
+            <table style="border: 2px solid black; padding: 20px; background-color: rgb(182, 189, 196);"> 
+                <!-- personal details section -->
+                <tr>
+                    <th colspan="4" style="text-align: center;">Personal Details: </th>
+                </tr>
+                <tr>
+                    <td><label> Medicore No</label></td> 
+                    <td><input type="text" style="width: 200px;"/><label> / </label><input type="text"  style="width: 30px;" /></td>
+                    <td colspan="2"><label>Valid Till : </label>
+                    <input type="date" style="width: 105px;"/></td> 
+                </tr>
+
+                <tr>
+                    <td><label>Title</label>
+                    <td colspan="3">
+                        <select name="title">
+                            <option selected>None</option>
+                            <option>Mr.</option>
+                            <option>Ms.</option>
+                            <option>Miss.</option>
+                        </select></td>
+                    </td>
+                </tr>
+
+                <tr><td></td><td colspan="3" style="font-size: small;">Lastname, Firstname, Middlename</td></tr>
+                <tr><td><label>Name</label></td> <td colspan="3"><input type="text"  style="width: 210px;"/></td></tr>
+                <tr><td><label>Pref. Name</label></td> <td colspan="3"><input type="text" style="width: 210px;"/></td></tr>
+
+                <tr><td> <label>DOB</label></td><td colspan="3"><input type="date"/></td></tr>
+                <tr><td> <label>Sex</label></td><td colspan="3"><input type="radio" name="gender"/> Male <input type="radio" name="gender"/> Female </td> </tr>
+                <tr><td> <label>Family Name</label></td><td ><input type="text" style="width: 210px;"></td></tr>
+                <tr><td colspan="4"><hr></td></tr>
+
+                <!-- contact details -->
+                <tr><th colspan="4" style="text-align: center;">Contact Details: </th></tr>
+                <tr>
+                    <td rowspan="6" ><label>Phone</label>  
+                    <td>Home</td>
+                    <td>Work</td></tr>
+
+                <tr>
+                    <td><input type="number"></td>
+                    <td><input type="number" ></td>
+                </tr>
+                        
+                <tr>
+                    <td>Mobile</td>
+                    <td>Fax</td>
+                </tr>
+                <tr>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+                
+                <tr>
+                    <td>Next of Kin</td>
+                    <td>Next of Kin Ph:</td>
+                </tr> 
+                <tr>
+                    <td><input type="number" ></td> 
+                    <td><input type="number"></td>
+                </tr>
+                
+                <tr><td><label>Emergency No.</label></td> <td colspan="3"><input type="number" style="width: 210px;"/></td></tr>
+                <tr><td><label>Email</label></td> <td colspan="3"><input type="email" style="width: 210px;"/></td></tr>
+
+
+                <!-- Address details 1  -->
+                <tr><td colspan="4"><hr></td></tr>
+                <tr><th colspan="4" style="text-align: center;">Address Details:</th></tr>
+                <tr><td>Residential Address:</td></tr>
+                <tr><td><label>Address 1</label></td><td colspan="3"><input type="text" style="width: 210px;" /> </td></tr>
+                <tr><td><label>Address 2</label></td><td colspan="3"><input type="text" style="width: 210px;" /> </td></tr>
+
+                <tr><td><label>Suburb</label></td>
+                    <td><input type="text"/></td>
+                    <td colspan="2"><label>State : </label>
+                    
+                    <select name="state" style="width: 135px;">
+                    <option selected >None</option>
+                    <option>Haryana</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                </select></td> 
+                </tr>
+
+                <tr>
+                    <td><label>Postal Code</label></td><td ><input type="number" name="medicoreNo"/> </td>
+                    <td colspan="2"><label>Country : </label><input type="text" style="width: 110px;"/> </td>
+                </tr>
+                <tr><td colspan="4"><hr></td></tr>
+                <tr>
+                    <td><label>Single Address</label></td>
+                    <td colspan="4"><label>Are Mailing Address and Residential Address same : </label>
+                    <input type="checkbox" name="sameAddress"/></td>
+                </tr> 
+
+                <!-- Address details 2  -->
+                <tr><td colspan="4"><hr></td></tr>
+                <tr><td>Mailing Address:</td></tr>
+                <tr><td><label>Address 1</label></td><td colspan="3"><input type="text" style="width: 210px;" /> </td></tr>
+                <tr><td><label>Address 2</label></td><td colspan="3"><input type="text" style="width: 210px;" /> </td></tr>
+
+                <tr><td><label>Suburb</label></td>
+                    <td><input type="text"/></td>
+                    <td colspan="2"><label>State : </label>
+                    
+                    <select name="state" style="width: 135px;">
+                    <option selected >None</option>
+                    <option>Haryana</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                </select></td> 
+                </tr>
+
+                <tr>
+                    <td><label>Postal Code</label></td><td ><input type="number" name="medicoreNo"/> </td>
+                    <td colspan="2"><label>Country : </label><input type="text" style="width: 110px;"/> </td>
+                </tr>
+
+                <!-- Other details  -->
+                <tr><td colspan="4"><hr></td></tr>
+                <tr><td><label>IHI Number</label></td><td><label>80036 </label><input type="number"style="width: 120px;"/></td></tr>
+                <tr><td><label>Number Status</label></td><td><input type="text" style="width: 217px;"/></td></tr>
+                <tr><td><label>Record Status</label></td><td><input type="text" style="width: 217px;"/></td></tr>
+                <tr><td><label>Last Updated</label></td><td><input type="text" style="width: 217px;"/></td></tr>
+
+            <tr><td><br></td></tr>
+            <!-- buttons -->
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit" name="Submit" style="width: 100px; height: 30px;">
+                    <input type="reset" name="Reset" name="Reset" style="width: 100px; height: 30px;">
+                </td>
+            </tr>
+
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>
