@@ -1,9 +1,10 @@
 .main-container {
     width: 900px;
-    height: 800px;
+    height: px;
     margin: auto;
     display: flex;
     font-family: 'Trebuchet MS', sans-serif;
+    border: 2px solid black;
 }
 /* container-1 */
 .container1 {

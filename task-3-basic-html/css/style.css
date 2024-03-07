@@ -2,6 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     width: 800px;
+    border: 2px solid black;
 }
 
 .container-bio-image {
@@ -28,35 +29,36 @@
 }
 
 .mid-section {
-    justify-content: center;
     width: 800px
 }
 
  .mid-container1 {
-    height: 500px;
+    height: 435px;
     width: 100%;
     margin-top: 35px;
     margin-bottom: 35px;
     background-color: lightsteelblue;
 } 
 
-.table-container {
-    height: 100%;
+.skill-section {
     line-height: 20px;
-    text-align: justify;
+}
+
+.table-container {
     margin-right: 35px;
+    text-align: justify;
 }
 
 .edu-table-headings {
-    text-align: center;
-    width: 30%;
+    display: flex;
+    width: 200px;
+    justify-content: center;
 }
 
 .education-table {
-    width: 800px;
-    height: 100%;
     border: 1px solid black;
     border-collapse: collapse;
+    margin: 10px;
 }
 
 .education-table-row {
