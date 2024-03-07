@@ -1,0 +1,26 @@
+body::before {
+    display: block;
+    content: '';
+    height: 56px;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+}
+
+.input-width {
+    width:250px;
+}
+
+.main-container {
+   /* border: 2px solid black; */
+   width: 100%
+} 
+
+.side-bar
+{
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 50px;
+}
