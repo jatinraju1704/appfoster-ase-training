@@ -13,29 +13,49 @@
 </head>
 <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #F3F6FD;">
-        <div class="container-fluid">
-            <div class="d-flex">
-            <a href="#" class="navbar-brand ms-4"><i class="bi bi-code-slash"></i> Portfolio</a>
-                <form class="d-flex" role="search">
-                  <input class="form-control input-width rounded-5" type="search" placeholder="Search"><button class="btn" type="submit"><i class="bi bi-search text-secondary"></i></button></input>
-                </form>
-            </div>
-            <div>
-                <a class="icon-link text-dark" href="#"><i class="bi bi-moon mx-1"></i></a>
-                <a class="icon-link text-dark" href="#"><i class="bi bi-plus-circle-fill mx-1"></i></a>
-                <a class="icon-link text-dark" href="#"><i class="bi bi-bell mx-1"></i></a>
-                <a class="icon-link text-dark" href="#"><img src="http://randomuser.me/api/portraits/men/11.jpg" alt="" class="rounded-circle mx-2" style="max-width:12%;" ></a>
-            </div>
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #F3F6FD;">
+
+        <a href="#" class="navbar-brand ms-4"><i class="bi bi-code-slash fs-3"></i> Portfolio</a>
+
+          <form class="d-flex input-width" role="search">
+            <input class="form-control rounded-5" type="search" placeholder="Search">
+            <button class="btn" type="submit"><i class="bi bi-search text-secondary"></i></button>
+            </input>
+          </form>
+
+          <button
+          class="navbar-toggler fs-6"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav px-3 align-items-md-center align-items-end nav-width d-lg-flex justify-content-end">
+              <li class="nav-item ">
+                <a class="icon-link text-dark nav-link" href="#"><i class="bi bi-moon mx-1"></i></a>
+              </li>
+              <li class="nav-item ">
+                <a class="icon-link text-dark nav-link" href="#"><i class="bi bi-plus-circle-fill mx-1"></i></a>
+              </li>
+              <li class="nav-item ">
+                <a class="icon-link text-dark nav-link" href="#"><i class="bi bi-bell mx-1"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="icon-link text-dark nav-link" href="#"><img src="http://randomuser.me/api/portraits/men/11.jpg" alt="" class="rounded-circle img-size"></a>
+              </li>
+            </ul>
           </div>
     </nav>
 
     <!-- Master Section -->
-    <div class="d-flex" style="background-color: #F3F6FD;">
+    <div class="d-flex" style="background-color: #F3F6FD; ">
         <!-- Side Bar -->
-        <div class="side-bar mx-3 mt-3">
-            <div class="d-flex flex-column gap-4 align-items-center justify-content-evenly">
-                <a class="icon-link text-dark" href="#"><i class="bi bi-house-door fs-4"></i></a>
+        <div class="side-bar mx-3 d-flex justify-content-center d-none d-sm-block">
+            <div class="d-flex flex-column fs-4 pt-5 align-items-center gap-5">
+                <a class="icon-link text-dark" href="#"><i class="bi bi-house-door"></i></a>
                 <a class="icon-link text-dark" href="#"><i class="bi bi-disc"></i></a>
                 <a class="icon-link text-dark" href="#"><i class="bi bi-calendar"></i></a>
                 <a class="icon-link text-dark" href="#"><i class="bi bi-gear"></i></a>
@@ -57,7 +77,7 @@
                     <div class="row row-cols-auto">
                         <div class="col mt-3">
                             <h4>45</h4>
-                            <p class="fs-6 text-secondary">In Progress <i class="bi bi-circle "></i></p>
+                            <p class="fs-6 fs-sm-1 text-secondary">In Progress <i class="bi bi-circle "></i></p>
                         </div>
                         
                         <div class="col mt-3">
@@ -71,7 +91,7 @@
                         </div>
                     </div>
                     <div class="row g-4 pt-3">
-                        <div class="col-4">
+                        <div class="col-md-4">
                             <div class="card rounded-5" style="background:#FEE4CB">
                                 <div class="card-body text-center ">
                                     <div class="d-flex justify-content-between">
@@ -88,7 +108,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-4">
+                        <div class="col-md-4">
                             <div class="card rounded-5" style="background:#E9E7FD">
                                 <div class="card-body text-center">
                                     <div class="d-flex justify-content-between">
@@ -105,7 +125,7 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-md-4">
                             <div class="card rounded-5" style="background:#DBF6FD">
                                 <div class="card-body text-center">
                                     <div class="d-flex justify-content-between">
@@ -122,7 +142,7 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-md-4">
                             <div class="card rounded-5" style="background:#FFD3E2">
                                 <div class="card-body text-center">
                                     <div class="d-flex justify-content-between">
@@ -139,7 +159,7 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-md-4">
                             <div class="card rounded-5" style="background:#C8F7DC">
                                 <div class="card-body text-center">
                                     <div class="d-flex justify-content-between">
@@ -156,7 +176,7 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-md-4">
                             <div class="card rounded-5" style="background:#D5DEFF">
                                 <div class="card-body text-center">
                                     <div class="d-flex justify-content-between">
@@ -174,7 +194,7 @@
                         </div>       
                         
                         <!-- Repeat -->
-                        <div class="col-4">
+                        <div class="col-md-4">
                             <div class="card rounded-5" style="background:#FEE4CB">
                                 <div class="card-body text-center ">
                                     <div class="d-flex justify-content-between">
@@ -191,7 +211,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-4">
+                        <div class="col-md-4">
                             <div class="card rounded-5" style="background:#E9E7FD">
                                 <div class="card-body text-center">
                                     <div class="d-flex justify-content-between">
@@ -208,7 +228,7 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-md-4">
                             <div class="card rounded-5" style="background:#DBF6FD">
                                 <div class="card-body text-center">
                                     <div class="d-flex justify-content-between">
@@ -225,7 +245,7 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-md-4">
                             <div class="card rounded-5" style="background:#FFD3E2">
                                 <div class="card-body text-center">
                                     <div class="d-flex justify-content-between">
@@ -242,7 +262,7 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-md-4">
                             <div class="card rounded-5" style="background:#C8F7DC">
                                 <div class="card-body text-center">
                                     <div class="d-flex justify-content-between">
@@ -259,7 +279,7 @@
                             </div>
                         </div>
 
-                        <div class="col-4">
+                        <div class="col-md-4">
                             <div class="card rounded-5" style="background:#D5DEFF">
                                 <div class="card-body text-center">
                                     <div class="d-flex justify-content-between">
