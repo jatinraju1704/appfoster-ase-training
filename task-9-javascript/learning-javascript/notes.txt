@@ -1,0 +1,64 @@
+Variables : Init & Dec.
+    let myvar;
+    myvar = "Hello";
+    let myvar = "Hello";
+
+Data Types : 
+    String
+    Numbers
+    Boolean
+    Array - let myVariable = [1,'Bob','Steve',10];
+    Object - let myVariable = document.querySelector('h1');
+
+    Difference between == and === :
+
+    The main difference between the two operators is how they compare values. 
+    The == operator compares the values of two variables after performing type conversion if necessary. 
+    On the other hand, the === operator compares the values of two variables without performing type conversion.
+
+    const num = 10;
+    const str = "10";
+
+    console.log(num == str); // true - The values are the same after type conversion
+    console.log(num === str); // false - The values are different types and not equal
+
+    const name = 'Alice';
+    const age = 25;
+
+    // Using template literals
+    const message = `My name is ${name} and I am ${age} years old.`;
+    console.log(message); // Output: My name is Alice and I am 25 years old.
+
+Comments :
+    /*
+    Everything in between is a comment.
+    */
+    // This is a comment
+
+Operators : 
+    [ +, -, *, /, = ]
+    === : This performs a test to see if two values are equal and of the same data type. 
+            It returns a true/false (Boolean) result.
+    !, !== : This returns the logically opposite value of what it precedes. 
+            It turns a true into a false, etc..
+
+Functions : 
+    function name(args1,args2, ...) {
+        // body of function
+    }
+
+Events : 
+    These are code structures that listen for activity in the browser, and run code in response. 
+    The most obvious example is handling the click event, which is fired by the browser when you click on something with your mouse. 
+    To demonstrate this, enter the following into your console, then click on the current webpage:
+
+    document.querySelector("html").addEventListener("click", function () {
+    alert("Ouch! Stop poking me!");
+    });
+
+
+Difference between QuerySelector and getElementById :
+    They both retrieve elements from a webpage, however the both have specific uses. 
+    If you want your code to be the most efficient and effective code, then when you are trying to retrieve an id then you should use getElementById. 
+    If you are trying to retrieve a class or tag then you should use querySelector. 
+    
