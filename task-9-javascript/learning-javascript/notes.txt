@@ -62,3 +62,10 @@ Difference between QuerySelector and getElementById :
     If you want your code to be the most efficient and effective code, then when you are trying to retrieve an id then you should use getElementById. 
     If you are trying to retrieve a class or tag then you should use querySelector. 
     
+
+How to pass the form data from html to js function
+{
+    let data = new FormData(e.target)
+    let number = parseInt(data.get("number"));
+    let split = parseInt(data.get("count"));
+}
