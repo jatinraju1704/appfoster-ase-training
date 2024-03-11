@@ -65,7 +65,7 @@ Difference between QuerySelector and getElementById :
 
 How to pass the form data from html to js function
 {
-    let data = new FormData(e.target)
+    let data = new FormData(e.target);
     let number = parseInt(data.get("number"));
     let split = parseInt(data.get("count"));
 }
