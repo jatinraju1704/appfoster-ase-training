@@ -42,7 +42,7 @@ function rowGenerator(data, num){
     var r = num * 4;
     var startIndex = r - 4;
     var endIndex = r - 1;
-    endIndex = endIndex >= data.length ? endIndex = data.length + 1 - (data.length % 4) : endIndex;
+    endIndex = endIndex >= data.length ? data.length + 1 - (data.length % 4) : endIndex;
 
     // parent container clean
     document.getElementById('parent-container').textContent='';
