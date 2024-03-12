@@ -7,8 +7,3 @@ function getUserDetails(element) {
     document.getElementById('u_email').textContent = `Email : ${element.email}`;
     document.getElementById('u_status').textContent = `Status : ${element.status}`;
 }
-
-
-// async function getUserData() {
-
-// }
