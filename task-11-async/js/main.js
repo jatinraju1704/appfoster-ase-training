@@ -1,6 +1,6 @@
 // how pagination works
 let data;
-let rowNumber = 4;
+let rowNumber = 7;
 
 // fetching the usersdata from api
 async function getUsersData() {
@@ -43,8 +43,9 @@ function rowGenerator(data, num){
     var r = num * rowNumber;
     var startIndex = r - rowNumber;
     var endIndex = r - 1;
-    endIndex = endIndex >= data.length ? data.length + 1 - (data.length % rowNumber) : endIndex;
+    endIndex = endIndex >= data.length ? startIndex + (data.length % rowNumber) - 1 : endIndex;
 
+    console.log(startIndex+" " +endIndex);
     // parent container clean
     document.getElementById('parent-container').textContent='';
 
