@@ -1,6 +1,6 @@
 // how pagination works
 let data;
-let rowNumber = 7;
+let rowNumber = 4;
 
 // fetching the usersdata from api
 async function getUsersData() {
