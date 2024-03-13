@@ -1,5 +1,6 @@
 // how pagination works
 let data;
+let rowNumber = 4;
 
 // fetching the usersdata from api
 async function getUsersData() {
@@ -23,8 +24,8 @@ getUsersData().then(
 // adding pagination
 function addingPagination(data) {
     document.getElementById('pages').setAttribute('class','');
-    let quot = Math.floor(data.length / 4);
-    let rem = data.length % 4;
+    let quot = Math.floor(data.length / rowNumber);
+    let rem = data.length % rowNumber;
     quot += rem == 0 ? 0 : 1;
     var pages = document.getElementById('pagesList');
 
@@ -39,10 +40,10 @@ function addingPagination(data) {
 }
 
 function rowGenerator(data, num){
-    var r = num * 4;
-    var startIndex = r - 4;
+    var r = num * rowNumber;
+    var startIndex = r - rowNumber;
     var endIndex = r - 1;
-    endIndex = endIndex >= data.length ? data.length + 1 - (data.length % 4) : endIndex;
+    endIndex = endIndex >= data.length ? data.length + 1 - (data.length % rowNumber) : endIndex;
 
     // parent container clean
     document.getElementById('parent-container').textContent='';
