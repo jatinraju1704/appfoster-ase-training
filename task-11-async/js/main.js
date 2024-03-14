@@ -1,8 +1,22 @@
 // how pagination works
-let data;
-let rowNumber = 4;
 
 // fetching the usersdata from api
+let rowNumber = 10;
+
+var rowNoInput = document.getElementById('rnum');
+rowNoInput.addEventListener("change", function(){
+    rowNumber = rowNoInput.value;
+    if(rowNumber > data.length)
+    {
+        rowNoInput.value = data.length;
+    }
+    else{
+        addingPagination(data);
+        rowGenerator(data, 1);
+    }
+});
+
+
 async function getUsersData() {
     let response = await fetch(`https://gorest.co.in/public/v2/users`);
     data = await response.json();
@@ -23,6 +37,7 @@ getUsersData().then(
 
 // adding pagination
 function addingPagination(data) {
+    document.getElementById('pagesList').textContent='';
     document.getElementById('pages').setAttribute('class','');
     let quot = Math.floor(data.length / rowNumber);
     let rem = data.length % rowNumber;
