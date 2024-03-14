@@ -90,7 +90,7 @@ function divsGenerator(arr){
     {
         var rd = document.createElement('div');
         rd.setAttribute("id","rd");
-        rd.style.width = arr[i] * 10 +"%";
+        rd.style.width = arr[i] * 100 +"%";
         rd.style.height = "100px";
         rd.style.background = getRandomColor();
         rd.style.color = "white";
