@@ -18,6 +18,3 @@ use App\Http\Controllers\ProjectController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/create/user', [UserController::class, 'getUserForm']);
-Route::get('/create/project', [ProjectController::class, 'getProjectForm']);
