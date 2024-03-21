@@ -1,1 +1,0 @@
-To make sure you always create a new branch when making changes.
