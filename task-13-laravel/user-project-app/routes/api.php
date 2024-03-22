@@ -34,5 +34,5 @@ Route::delete("/host/project/delete/{pid}", [ProjectController::class, 'deleteBy
 Route::put("/host/project/update/{pid}", [ProjectController::class, 'UpdateById']);
 
 //* User-Project API
-Route::get("/host/user/{id}/project",[UserProjectController::class, 'getProjectsByUserId']);
 Route::post("/host/user/project",[UserProjectController::class, 'addUserProject']);
+Route::get("/host/user/{id}/project",[UserProjectController::class, 'getProjectsByUserId']);
