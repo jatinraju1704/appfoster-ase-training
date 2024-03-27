@@ -14,18 +14,17 @@ body {
 }
 
 .main-container {
-   /* border: 2px solid black; */
-   width: 100%
-} 
+    /* border: 2px solid black; */
+    width: 100%
+}
 
-.side-bar
-{
+.side-bar {
     /* border: 2px solid black; */
     height: 500px;
     width: 50px;
 }
 
-.app-border{
+.app-border {
     border: 2px solid black;
 }
 

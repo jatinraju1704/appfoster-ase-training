@@ -1,4 +1,6 @@
 
+//* create api for user to fetch data 
+// Here
 function getUserDetails(element) {
     document.getElementById('modalTitle').textContent = `ID : ${element.id}`;
 
