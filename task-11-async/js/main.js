@@ -1,5 +1,3 @@
-// how pagination works
-
 // fetching the usersdata from api
 let rowNumber = 10;
 
@@ -84,7 +82,7 @@ function rowGenerator(data, num) {
         //icon
         bt.setAttribute("class", "bi bi-eye-fill text-primary");
 
-        bt.addEventListener('click', () => getUserDetails(data[i]));
+        bt.addEventListener('click', () => getUserDetails(data[i].id));
 
         // adding span, button into div
         d.appendChild(sp);
